@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.PathVariable
     name = "FindAddressByZipCodeClient",
     url = "\${dev.client.address.url}"
 )
-interface FindAddressByZipCodeClient {
-
+interface FindAddressByZipCodeClient
+{
     @GetMapping("/{zipCode}")
     fun find(@PathVariable zipCode: String): AddressResponse
 }
